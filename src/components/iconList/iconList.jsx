@@ -1,14 +1,16 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import shortid from "shortid";
 
-import "./iconList.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNames } from "../../fa-names";
 
-export const IconList = ({ icons }) => {
+import "./iconList.css";
+
+export const IconList = ({ iconsArray }) => {
   return (
     <div className="iconList">
-      {icons &&
-        icons.map((icon) => (
-          <FontAwesomeIcon icon={faNames[icon.id]} key={icon.key} />
+      {iconsArray &&
+        iconsArray?.map((icon) => (
+          <FontAwesomeIcon icon={faNames[icon?.id]} key={shortid.generate()} />
         ))}
     </div>
   );

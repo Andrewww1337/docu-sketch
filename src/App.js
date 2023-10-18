@@ -5,7 +5,6 @@ import "./reset.css";
 
 function App() {
   // const fontAwesomeList = require("font-awesome-list");
-
   return (
     <div className="App">
       <IconGenerator />
