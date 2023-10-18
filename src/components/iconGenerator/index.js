@@ -1,0 +1,1 @@
+export { IconGenerator } from "./iconGenerator";
