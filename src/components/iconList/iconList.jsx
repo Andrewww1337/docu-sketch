@@ -10,7 +10,12 @@ export const IconList = ({ iconsArray }) => {
     <div className="iconList">
       {iconsArray &&
         iconsArray?.map((icon) => (
-          <FontAwesomeIcon icon={faNames[icon?.id]} key={shortid.generate()} />
+          <FontAwesomeIcon
+            className="icon"
+            icon={faNames[icon?.id]}
+            key={shortid.generate()}
+            size="lg"
+          />
         ))}
     </div>
   );
